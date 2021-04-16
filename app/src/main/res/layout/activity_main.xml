@@ -55,7 +55,7 @@
 
     <Button
         android:id="@+id/btnEntrar"
-        android:layout_width="351dp"
+        android:layout_width="352dp"
         android:layout_height="0dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
