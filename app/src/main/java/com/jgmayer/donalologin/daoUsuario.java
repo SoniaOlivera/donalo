@@ -13,11 +13,11 @@ public class daoUsuario {
     ArrayList<Usuario> lista;
     SQLiteDatabase sql;
     String bd="BDUsuarios";
-    String tabla="create table if not exists usuario(id integer primary key autoincrement, usuario text,pass text,nombrw text,ap text)";
+    String tabla="create table if not exists usuario (id integer primary key autoincrement, usuario text,pass text,nombre text,ap text)";
 
     public daoUsuario(Context c){
-        this.c= this.c;
-        sql= this.c.openOrCreateDatabase(bd, Context.MODE_PRIVATE,null);
+        this.c= c;
+        sql= this.c.openOrCreateDatabase(bd, c.MODE_PRIVATE,null);
         sql.execSQL(tabla);
         u= new Usuario();
     }
@@ -95,6 +95,15 @@ public class daoUsuario {
 
         }
         return null;
+    }
+    public boolean updateUsuario(Usuario u){
+        ContentValues cv = new ContentValues();
+        cv.put("usuario", u.getUsuario());
+        cv.put("pass", u.getPassword());
+        cv.put("nombre", u.getNombre());
+        cv.put("ap", u.getApellidos());
+        return (sql.update("usuario",cv,"id="+ u.getId(),null) > 0);
+
     }
 
 
