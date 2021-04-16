@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+
+        android:layout_height="300dp"
+        android:background="?android:attr/statusBarColor"
+        app:srcCompat="@drawable/logoooo" />
+
+    <EditText
+        android:id="@+id/User"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="3"
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/login"
+        android:drawablePadding="10dp"
+
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+
+        />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="3"
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+
+        android:ems="10"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="351dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="3"
+        android:background="@color/purple_700"
+        android:text="@string/Ingresar"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="352dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="3"
+        android:background="@color/purple_700"
+        android:text="@string/registrar"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
