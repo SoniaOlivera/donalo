@@ -105,6 +105,9 @@ public class daoUsuario {
         return (sql.update("usuario",cv,"id="+ u.getId(),null) > 0);
 
     }
+    public boolean deleteUsuario(int id){
+        return (sql.delete("usuario","id= "+ id,null)>0);
+    }
 
 
 

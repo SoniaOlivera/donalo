@@ -28,6 +28,8 @@ public class Editar extends AppCompatActivity implements View.OnClickListener {
         ediApellido=(EditText)findViewById(R.id.EdiApellido);
         btnActualizar=(Button)findViewById(R.id.btnEdiActualizar);
         btnCancelar=(Button)findViewById(R.id.btnEdiCancelar);
+        btnActualizar.setOnClickListener(this);
+        btnCancelar.setOnClickListener(this);
 
         Bundle b =getIntent().getExtras();
         id = b.getInt("id");
@@ -47,7 +49,6 @@ public class Editar extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnEdiActualizar:
-                Usuario u=new Usuario();
                 u.setUsuario(ediUser.getText().toString());
                 u.setPassword(ediPass.getText().toString());
                 u.setNombre(ediNombre.getText().toString());
@@ -57,14 +58,17 @@ public class Editar extends AppCompatActivity implements View.OnClickListener {
                 } else if (dao.updateUsuario(u)){
                     Toast.makeText(this,"Actualización Exitoso!!!",Toast.LENGTH_LONG).show();
                     Intent i2= new Intent(Editar.this,Inicio.class);
+                    i2.putExtra("id",u.getId());
                     startActivity(i2);
                     finish();
                 } else {
-                    Toast.makeText(this,"Usuario ya registrado!!!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(this,"No se puede actualizar",Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.btnEdiCancelar:
                 Intent i2= new Intent(Editar.this,Inicio.class);
+                i2.putExtra("id",u.getId());
+
                 startActivity(i2);
                 finish();
                 break;
