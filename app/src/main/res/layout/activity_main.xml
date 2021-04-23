@@ -16,12 +16,14 @@
 
         android:layout_height="300dp"
         android:background="?android:attr/statusBarColor"
-        app:srcCompat="@drawable/logoooo" />
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logo10" />
 
     <EditText
         android:id="@+id/User"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="15dp"
@@ -55,7 +57,7 @@
 
     <Button
         android:id="@+id/btnEntrar"
-        android:layout_width="352dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
@@ -65,18 +67,18 @@
         android:text="@string/Ingresar"
         android:textColor="@color/white"
         android:textSize="30dp"
-
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnRegistrar"
-        android:layout_width="352dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginBottom="5dp"
         android:layout_weight="3"
         android:background="@color/purple_700"
+        android:gravity="center_horizontal|center_vertical"
         android:text="@string/registrar"
         android:textColor="@color/white"
         android:textSize="30dp"

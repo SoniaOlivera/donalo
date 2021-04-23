@@ -21,68 +21,71 @@
         android:id="@+id/EdiUser"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textEmailAddress"
-        android:textSize="18sp" />
+        android:textSize="15dp" />
 
     <EditText
         android:id="@+id/EdiPass"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textSize="18sp" />
+        android:textSize="15dp" />
 
     <EditText
         android:id="@+id/EdiNombre"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="textPersonName"
-        android:textSize="18sp" />
+        android:textSize="15dp" />
 
     <EditText
         android:id="@+id/EdiApellido"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
         android:ems="10"
         android:hint="Apellido"
         android:inputType="textPersonName"
-        android:textSize="18sp" />
+        android:textSize="15dp" />
 
     <Button
         android:id="@+id/btnEdiActualizar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:layout_weight="1"
         android:background="@color/purple_700"
         android:text="Actualizar"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
     <Button
         android:id="@+id/btnEdiCancelar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="15dp"
         android:layout_weight="1"
         android:background="#AA0929"
         android:text="Cancelar"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
 

@@ -5,4 +5,5 @@
     <string name="Ingresar">Entrar</string>
     <string name="registrar">REGISTRARSE</string>
     <string name="obtenercontraseña">SE TE OLVIDO LA CONTRASEÑA?</string>
+    <string name="bienvenido">Bienvenido Usuario:</string>
 </resources>

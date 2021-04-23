@@ -11,7 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Inicio extends AppCompatActivity implements View.OnClickListener {
+public class
+Inicio extends AppCompatActivity implements View.OnClickListener {
     Button btnEditar, btnEliminar, btnMostrar, btnSalir;
     TextView nombre;
     int id =0;

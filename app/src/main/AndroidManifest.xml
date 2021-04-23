@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DonaloLogin">
-        <activity android:name=".Registrar"></activity>
+        <activity android:name=".Donar"></activity>
+        <activity android:name=".Registrar" />
         <activity android:name=".Mostrar" />
         <activity android:name=".Inicio" />
         <activity android:name=".Editar" />
