@@ -1,85 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_light"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="CREAR NUEVA PUBLICACION" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/TipoPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:hint="DONAR"
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextTextMultiLine3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="CONTACTO"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:ems="10"
-        android:gravity="start|top"
+        android:id="@+id/Producto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
         android:hint="PRODUCTO"
-        android:inputType="textMultiLine"
-        app:layout_constraintTop_toBottomOf="@+id/checkedTextView2"
-        tools:layout_editor_absoluteX="88dp" />
+        android:inputType="textPersonName"
+
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/Descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:hint="Descripcion"
+        android:inputType="textPersonName"
+        android:textSize="15dp" />
+    <EditText
+        android:id="@+id/Contacto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:hint="Contacto"
+        android:textSize="15dp"
+
+        android:inputType="textPersonName"/>
+
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PUBLICAR"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="571dp" />
+        android:id="@+id/btnPublicar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:background="@color/purple_700"
+        android:text="Publicar"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Descripcion"
-        android:inputType="textMultiLine"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
-        tools:layout_editor_absoluteX="89dp" />
+    <Button
+        android:id="@+id/btnProdCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:background="#AA0929"
+        android:text="Cancelar"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nueva Publicacion"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="16dp" />
 
-    <CheckedTextView
-        android:id="@+id/checkedTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DONAR"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="167dp" />
-
-    <CheckedTextView
-        android:id="@+id/checkedTextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SOLICITAR"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="167dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

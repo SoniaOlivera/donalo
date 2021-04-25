@@ -9,6 +9,6 @@ public class Donar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.publicaciones);
+        setContentView(R.layout.ver_publicaciones);
     }
 }

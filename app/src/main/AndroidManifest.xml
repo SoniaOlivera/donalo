@@ -14,6 +14,8 @@
         <activity android:name=".Mostrar" />
         <activity android:name=".Inicio" />
         <activity android:name=".Editar" />
+        <activity android:name=".NuevasPublicaciones" />
+        <activity android:name=".VerPublicaciones" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

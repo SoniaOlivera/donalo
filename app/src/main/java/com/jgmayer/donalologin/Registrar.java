@@ -19,14 +19,14 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registrar);
 
-        us=(EditText)findViewById(R.id.RegUser);
-        pas=(EditText)findViewById(R.id.RegPass);
-        nom=(EditText)findViewById(R.id.RegNombre);
-        ap=(EditText)findViewById(R.id.RegApellido);
+        us=(EditText)findViewById(R.id.Donar);
+        pas=(EditText)findViewById(R.id.Producto);
+        nom=(EditText)findViewById(R.id.Descripcion);
+        ap=(EditText)findViewById(R.id.Contacto);
 
 
-        reg=(Button)findViewById(R.id.btnRegRegistrar);
-        can=(Button)findViewById(R.id.btnRegCancelar);
+        reg=(Button)findViewById(R.id.btnPublicar);
+        can=(Button)findViewById(R.id.btnProdCancelar);
 
         reg.setOnClickListener(this);
         can.setOnClickListener(this);
@@ -36,7 +36,7 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btnRegRegistrar:
+            case R.id.btnPublicar:
                 Usuario u=new Usuario();
                 u.setUsuario(us.getText().toString());
                 u.setPassword(pas.getText().toString());
@@ -53,7 +53,7 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
                     Toast.makeText(this,"Usuario ya registrado!!!",Toast.LENGTH_LONG).show();
                 }
                 break;
-            case R.id.btnRegCancelar:
+            case R.id.btnProdCancelar:
                 Intent i= new Intent(Registrar.this,MainActivity.class);
                 startActivity(i);
                 finish();

@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         user=(EditText)findViewById(R.id.User);
-        pass=(EditText)findViewById(R.id.Pass);
+        pass=(EditText)findViewById(R.id.Pass
+        );
         btnEntrar=(Button)findViewById(R.id.btnEntrar);
         btnRegistrar=(Button)findViewById(R.id.btnRegistrar);
 
