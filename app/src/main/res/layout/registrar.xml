@@ -18,7 +18,7 @@
 
 
     <EditText
-        android:id="@+id/RegUser"
+        android:id="@+id/Donar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
@@ -28,7 +28,7 @@
         android:textSize="15dp" />
 
     <EditText
-        android:id="@+id/RegPass"
+        android:id="@+id/Producto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
@@ -39,7 +39,7 @@
         android:textSize="15dp" />
 
     <EditText
-        android:id="@+id/RegNombre"
+        android:id="@+id/Descripcion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
@@ -48,7 +48,7 @@
         android:inputType="textPersonName"
         android:textSize="15dp" />
     <EditText
-        android:id="@+id/RegApellido"
+        android:id="@+id/Contacto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
@@ -60,7 +60,7 @@
 
 
     <Button
-        android:id="@+id/btnRegRegistrar"
+        android:id="@+id/btnPublicar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
@@ -72,7 +72,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnRegCancelar"
+        android:id="@+id/btnProdCancelar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
