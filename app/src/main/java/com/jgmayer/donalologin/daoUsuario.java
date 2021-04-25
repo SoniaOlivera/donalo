@@ -1,5 +1,4 @@
 package com.jgmayer.donalologin;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -16,6 +15,7 @@ public class daoUsuario {
     String tabla="create table if not exists usuario (id integer primary key autoincrement, usuario text,pass text,nombre text,ap text)";
 
     public daoUsuario(Context c){
+
         this.c= c;
         sql= this.c.openOrCreateDatabase(bd, c.MODE_PRIVATE,null);
         sql.execSQL(tabla);

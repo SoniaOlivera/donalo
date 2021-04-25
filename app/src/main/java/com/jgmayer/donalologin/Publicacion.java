@@ -15,15 +15,15 @@ public class Publicacion {
         Contacto = contacto;
     }
 
-    /*public boolean isNull(){
+    public boolean isNull(){
 
-        if (Nombre.equals("")&&Apellidos.equals("")&&Usuario.equals("")&&Password.equals("")){
+        if (Tipo.equals("")&&Producto.equals("")&&Descripcion.equals("")&&Contacto.equals("")){
             return false;
         }
         else {
             return true;
         }
-    }*/
+    }
 
     @Override
     public String toString() {
@@ -76,6 +76,5 @@ public class Publicacion {
         Contacto = contacto;
     }
 
-    public boolean isNull() {
-    }
+
 }

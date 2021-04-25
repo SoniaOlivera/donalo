@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import static com.jgmayer.donalologin.R.id.btnProdCancelar;
+import static com.jgmayer.donalologin.R.id.btnPublicar;
+
 public class NuevasPublicaciones extends AppCompatActivity implements View.OnClickListener {
     EditText tip,pro,des,con;
     Button reg,can;
@@ -25,8 +28,8 @@ public class NuevasPublicaciones extends AppCompatActivity implements View.OnCli
         con=(EditText)findViewById(R.id.Contacto);
 
 
-        reg=(Button)findViewById(R.id.btnPublicar);
-        can=(Button)findViewById(R.id.btnProdCancelar);
+        reg=(Button)findViewById(btnPublicar);
+        can=(Button)findViewById(btnProdCancelar);
 
         reg.setOnClickListener(this);
         can.setOnClickListener(this);
@@ -36,7 +39,7 @@ public class NuevasPublicaciones extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btnPublicar:
+            case btnPublicar:
                 Publicacion p= new Publicacion();
                 p.setTipo(tip.getText().toString());
                 p.setProducto(pro.getText().toString());
@@ -44,20 +47,18 @@ public class NuevasPublicaciones extends AppCompatActivity implements View.OnCli
                 p.setContacto(con.getText().toString());
                 if(!p.isNull()){
                     Toast.makeText(this,"ERROR:Campos Vacios",Toast.LENGTH_LONG).show();
-                } else if (dao.insertPublicacion(p)){
+                } else  (dao.insertPublicacion(p)){
                     Toast.makeText(this,"Publicacion Exitosa!!!",Toast.LENGTH_LONG).show();
                     Intent i2= new Intent(NuevasPublicaciones.this,MainActivity.class);
                     startActivity(i2);
                     finish();
-                /*} else {
-                    Toast.makeText(this,"Usuario ya registrado!!!",Toast.LENGTH_LONG).show();
-                }*/
-                break;
-            case R.id.btnProdCancelar:
-                Intent i= new Intent(NuevasPublicaciones.this,MainActivity.class);
-                startActivity(i);
-                finish();
-                break;
+                }
+            case btnProdCancelar:
+            Intent i= new Intent(NuevasPublicaciones.this,MainActivity.class);
+            startActivity(i);
+            finish();
+            break;
+
 
         }
 
